@@ -25,7 +25,7 @@ span {
     font-family: 'Poppins', sans-serif;
     min-width: 12.5rem;
     max-width: 12.5rem;
-    background: #1e0e5a;
+    background: #0e0629;
     color: #fff !important;
     transition: all 0.3s;
     border-radius: 10px;
@@ -77,7 +77,7 @@ span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #1e0e5a;
+    background: #0e0629;
 }
 
 #sidebar .sidebar-header strong {
@@ -152,7 +152,7 @@ a.article:hover {
     position: relative;
     right: 1.8rem;
     bottom: 1rem;
-    background-color: #624daf;
+    background-color:#0f072b;
 }
 
 #btn-icon {
@@ -231,7 +231,7 @@ a.article:hover {
     MODALS STYLE
 ----------------------------------------------------- */
 .modal-content {
-    background-color: #1e0e5a;
+    background-color: #0e0629;
     text-shadow: 1px 1px rgb(36, 34, 34);
     font-size: 1.2rem;
     font-weight: 600;
@@ -240,6 +240,10 @@ a.article:hover {
 form {
     width: 20rem;
 
+}
+
+#email:focus {
+    box-shadow: none;
 }
 
 #btn-subscribe {
@@ -268,7 +272,7 @@ form {
 
 @media (max-width: 360px ) {
     form {
-        width: 11rem;
+        width: 12rem;
     }
     #btn-subscribe {
         margin-left: 2rem;
@@ -277,3 +281,31 @@ form {
     }
 }
 
+.modal-popup-header{
+    border-bottom: none;
+}
+
+.modal-login-footer {
+    border-top: none;
+}
+
+.email-popup {
+    margin-left: 4rem;
+}
+
+#btn-subscribe-popup {
+    margin-left: 7rem;
+    margin-top: 1rem;
+}
+
+
+@media(max-width: 280px) {
+    .email-popup {
+        margin-left: 0;
+    }
+    #btn-subscribe-popup {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+}

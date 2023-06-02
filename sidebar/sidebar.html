@@ -149,11 +149,77 @@
                 </div>
               </form>
             </div>
-            <div class="modal-footer"></div>
+            <div class="modal-footer modal-login-footer"></div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Popup Modal-->
+    <div class="container">
+      <div
+        class="modal fade"
+        id="modal-popup"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-black text-white font-monospace">
+            <div class="modal-header modal-popup-header">
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                data-bs-target="modal-popup"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <i class="fas fa-envelope fa-7x mb-5" style="color: #ceeaed"></i>
+              <h1>Subscribe!</h1>
+              <p>
+                Subscribe to our newsletter to receive the latest updates and
+                promotions
+              </p>
+              <form
+                action=""
+                class="text-center"
+                method="post"
+                id="form-subscribe"
+              >
+                <label for="email" class="form-label"></label>
+                <div class="input-group email-popup">
+                  <div class="input-group-text">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control form-control-lg"
+                    placeholder="Email"
+                  />
+                </div>
+                <button
+                  id="btn-subscribe-popup"
+                  class="btn btn-danger border-black"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="wrapper">
       <!-- Sidebar  -->
       <nav id="sidebar">
@@ -167,7 +233,7 @@
           </li>
           <li>
             <a
-              class="btn-outline-*"
+              class="btn-outline-* modal_button"
               role="button"
               data-bs-toggle="modal"
               data-bs-target="#modal-newsletter"
@@ -184,7 +250,7 @@
           </li>
           <li class="last-item">
             <a
-              class="btn-outline-*"
+              class="btn-outline-* modal_button"
               role="button"
               data-bs-toggle="modal"
               data-bs-target="#modal-login"
@@ -278,5 +344,3 @@
     <script src="index.js"></script>
   </body>
 </html>
-
-
