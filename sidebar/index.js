@@ -1,7 +1,12 @@
 let btn = document.querySelector('#sidebarCollapse');
+
 let sidebar = document.querySelector('#sidebar');
+
 let btnIcon = document.querySelector('#btn-icon')
+
 let modalButtons = document.querySelectorAll('.modal_button');
+
+const forms = document.querySelectorAll('form');
 
 
 btn.onclick = function () {
@@ -22,4 +27,17 @@ setTimeout(function() {
     let myModal = new bootstrap.Modal(document.getElementById('modal-popup'));
     myModal.show();
   }
-}, 1000);
+}, 15000);
+
+
+forms.forEach(form => {
+  form.addEventListener('submit', e => {
+    if (!form.checkValidity()) {
+      e.preventDefault();
+    }
+
+    form.classList.add('was-validated');
+  });
+});
+
+
