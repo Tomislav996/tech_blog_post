@@ -270,7 +270,7 @@ form {
     height: 2rem;
 }
 
-@media (max-width: 360px ) {
+@media (max-width: 415px ) {
     form {
         width: 12rem;
     }
@@ -296,6 +296,10 @@ form {
 #btn-subscribe-popup {
     margin-left: 7rem;
     margin-top: 1rem;
+}
+
+#close-btn-popup{
+    margin-right: 2rem;
 }
 
 
