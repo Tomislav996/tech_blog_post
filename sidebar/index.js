@@ -22,4 +22,4 @@ setTimeout(function() {
     let myModal = new bootstrap.Modal(document.getElementById('modal-popup'));
     myModal.show();
   }
-}, 15000);
+}, 1000);
