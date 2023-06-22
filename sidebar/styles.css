@@ -160,6 +160,10 @@ a.article:hover {
     color: rgb(252, 252, 252);
 }
 
+#posts {
+    cursor: pointer;
+}
+
 
 
 

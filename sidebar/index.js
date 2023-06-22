@@ -6,6 +6,8 @@ let btnIcon = document.querySelector('#btn-icon')
 
 let modalButtons = document.querySelectorAll('.modal_button');
 
+const postsBtn = document.getElementById('posts')
+
 const forms = document.querySelectorAll('form');
 
 
@@ -39,5 +41,10 @@ forms.forEach(form => {
     form.classList.add('was-validated');
   });
 });
+
+
+postsBtn.addEventListener("click", () => {
+  fetchData()
+})
 
 
