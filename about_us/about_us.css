@@ -11,7 +11,8 @@ body {
     width: 100%;
     height: auto;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #080414;
+    color: #fff 
 }
 #wrapper{
     width: 90%;
