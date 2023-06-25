@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="../posts/posts.css" />
     <link rel="stylesheet" href="../footer/footer.css" />
+    <link rel="stylesheet" href="../about_us/about_us.css" />
 
     <!-- Font Awesome JS -->
     <script
@@ -256,7 +257,6 @@
         <ul class="list-unstyled components">
           <li>
             <a id="posts">
-               
               <i id="icons" class="fas fa-newspaper"></i>
               <span class="nav-item">Posts</span>
             </a>
@@ -273,13 +273,14 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#"  id="about-us">
               <i id="icons" class="fas fa-info-circle"></i>
               <span class="nav-item">About us</span>
             </a>
           </li>
           <li class="last-item">
             <a
+            
               class="btn-outline-* modal_button"
               role="button"
               data-bs-toggle="modal"
@@ -293,28 +294,114 @@
       </nav>
 
       <!-- Page Content  -->
+
       <div id="content">
         <div class="container-fluid">
           <button type="button" id="sidebarCollapse" class="btn">
             <i class="fas fa-align-left" id="btn-icon"></i>
           </button>
         </div>
+
+        <!-- Tech Blogs -->
         <header class="py-3">
           <div class="logo text-center">
-            <h1>Tech Blog</h1>
+            <h1 >Tech Blog</h1>
           </div>
         </header>
 
         <main id="main"></main>
+
+        <!-- Abous Us -->
+        <div class="d-none"  id="container" >
+          <h1>About Us</h1>
+
+          <div id="wrapper">
+            <h2>Who are we?</h2>
+            <div class="team_info">
+              <p class="des_text">
+                <b>Developer Team Description text</b><br />Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised
+                in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+            </div>
+            <div class="person">
+              <h2>Name: Person-one</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum
+              </p>
+              <img src="./img/food.jpg" />
+            </div>
+            <div class="person">
+              <h2>Name: Person-two</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum
+              </p>
+              <img src="./img/drink.jpg" />
+            </div>
+            <div class="person">
+              <h2>Name: Person-three</h2>
+              <p>description text - person3</p>
+              <img src="" />
+            </div>
+            <div class="person">
+              <h2>Name: Person-four</h2>
+              <p>description text - person4</p>
+              <img src="" />
+            </div>
+            <div class="person">
+              <h2>Name: Person-five</h2>
+              <p>description text - person5</p>
+              <img src="" />
+            </div>
+
+            <div class="person">
+              <h2>Name: Person-six</h2>
+              <p>description text - person6</p>
+              <img src="" />
+            </div>
+            <div class="person">
+              <h2>Name: Person-seven</h2>
+              <p>description text - person7</p>
+              <img src="" />
+            </div>
+          </div>
+        </div>
       </div>
       <div id="alertMessage">
         <p id="inputMessage"></p>
       </div>
+
       <div class="mainbody">
         <button title="Show Footer" id="footerButton">
           <span class="arrowUp"></span>
         </button>
       </div>
+
       <!-- Footer -->
       <footer class="footer container-fluid">
         <button title="Hide Footer" id="hideFooter">

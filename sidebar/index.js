@@ -8,8 +8,13 @@ let modalButtons = document.querySelectorAll('.modal_button');
 
 const postsBtn = document.getElementById('posts')
 
+const aboutUsBtn = document.getElementById('about-us')
+
 const forms = document.querySelectorAll('form');
 
+const mainPage = document.getElementById('main');
+
+const aboutUsPage = document.getElementById("container")
 
 btn.onclick = function () {
     sidebar.classList.toggle('active');
@@ -45,6 +50,14 @@ forms.forEach(form => {
 
 postsBtn.addEventListener("click", () => {
   fetchData()
+  mainPage.classList.remove("d-none");
+  aboutUsPage.classList.add("d-none");
+})
+
+aboutUsBtn.addEventListener("click", () => {
+  aboutUsPage.classList.remove("d-none");
+  mainPage.classList.add("d-none");
+  
 })
 
 
