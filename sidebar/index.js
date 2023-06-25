@@ -16,6 +16,8 @@ const mainPage = document.getElementById('main');
 
 const aboutUsPage = document.getElementById("container")
 
+const fadeInClass = "fade-in";
+
 btn.onclick = function () {
     sidebar.classList.toggle('active');
 }
@@ -51,11 +53,13 @@ forms.forEach(form => {
 postsBtn.addEventListener("click", () => {
   fetchData()
   mainPage.classList.remove("d-none");
+  mainPage.classList.add(fadeInClass)
   aboutUsPage.classList.add("d-none");
 })
 
 aboutUsBtn.addEventListener("click", () => {
   aboutUsPage.classList.remove("d-none");
+  aboutUsPage.classList.add(fadeInClass);
   mainPage.classList.add("d-none");
   
 })
