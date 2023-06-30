@@ -25,7 +25,6 @@ span {
     font-family: 'Poppins', sans-serif;
     min-width: 12.5rem;
     max-width: 12.5rem;
-    height:  250rem;
     background: #080414;
     color: #fff !important;
     transition: all 0.3s;
@@ -186,15 +185,8 @@ a.article:hover {
     #sidebar {
         min-width: 80px;
         max-width: 80px;
-        height: 350rem;
         text-align: center;
         margin-left: -80px !important;
-    }
-
-    @media (max-width: 575px) {
-        #sidebar {
-            height: 480rem;
-        }
     }
 
     
